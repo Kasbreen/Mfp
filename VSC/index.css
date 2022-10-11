@@ -23,7 +23,8 @@ body, h1, h2, h3, h4, p, a {
     color: rgba(255, 255, 255, .8);
     max-width: 400px; width: auto;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    flex-direction: column; 
 }
 
 .logo {
@@ -35,6 +36,7 @@ body, h1, h2, h3, h4, p, a {
 }
 
 .nav {
+    margin-top: 20px;
     position: relative;
     display: inline-block;
 }
@@ -62,12 +64,12 @@ body, h1, h2, h3, h4, p, a {
 
 .link1 {
     width: 45px;
-    left: 63px;
+    right: 62.6px;
 }
 
 .link2 {
     width: 48px;
-    left: 125px;
+    left: 62.5px;
 }
 
 .link1 a, .link2 a {
@@ -79,10 +81,10 @@ body, h1, h2, h3, h4, p, a {
 
 .menu:hover+ .link{
 	opacity:0;
-	animation: ani 1.5s forwards;
+	animation: an 1.5s forwards;
 }
 
-@keyframes ani {
+@keyframes an {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
@@ -94,9 +96,7 @@ body, h1, h2, h3, h4, p, a {
 
 .columns {
     width: 1300px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 90px auto 30px;
     border-radius: 15px;
     background-position: center;
     /*background-color: rgba(0, 0, 0, 0.4);*/ 
@@ -171,19 +171,8 @@ body, h1, h2, h3, h4, p, a {
         justify-content: space-between;
     }
 
-    .link1 {
-        width: 45px;
-        left: -35px;
-        top: 35.5px;
-    }
-    
-    .link2 {
-        width: 48px;
-        left: 129px;
-    }
-   
     .columns { 
-        margin: auto;
+        margin: 90px auto 0;
         width: auto; 
         max-width: 700px;
     }
