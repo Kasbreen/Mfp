@@ -64,12 +64,12 @@ body, h1, h2, h3, h4, p, a {
 
 .link1 {
     width: 45px;
-    right: 62.6px;
+    right: 62px;
 }
 
 .link2 {
     width: 48px;
-    left: 62.5px;
+    left: 62px;
 }
 
 .link1 a, .link2 a {
